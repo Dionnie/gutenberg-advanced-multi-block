@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/simple-cta",
+	"version": "0.1.0",
+	"title": "Simple Cta",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"textdomain": "advanced-multi-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"supports": {
+		"html": false,
+		"background": {
+			"backgroundImage": true,
+			"backgroundSize": true
+		},
+		"color": {
+			"text": true,
+			"link": true,
+			"background": true
+		}
+	},
+	"attributes": {
+		"title": { "type": "string" },
+		"subtitle": { "type": "string" },
+		"variant": {
+			"type": "string",
+			"default": "light"
+		}
+	}
+}
